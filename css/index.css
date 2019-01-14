@@ -92,6 +92,8 @@ body {
         max-width: 100%;
         flex-direction: column-reverse;
         justify-content: space-around;
+        /* border: 1px solid red; */
+        margin-top: 13px;
     }
 }
 
@@ -102,10 +104,11 @@ body {
 
 @media (max-width: 800px){
     .menu nav {
+        max-width: 100%;
         display: flex;
         justify-content: space-around;
-        /* border: 1px solid red; */
-        padding-top:30px;
+        border: 1px solid red;
+        padding: 30px 20px 0 0;
     }
 }
 
@@ -125,12 +128,18 @@ body {
 	/* border: 1px solid red; */
 }
 
-@media (max-width: 800px){
+@media (max-width: 500px){
     .menu nav a{
         text-align: center;
         border-top: 1px solid gray;
         margin: 0;
         
+    }
+}
+
+@media (max-width: 500px){
+    .menu nav a:last-of-type {
+        border-bottom: 1px solid gray;       
     }
 }
 
@@ -165,8 +174,14 @@ body {
 
 
 .cta h1 {
-	font-size: 75px;
+	font-size: 70px;
 	padding: 0;
+}
+
+@media (max-width: 800px){
+    .cta h1 {
+        padding-bottom: 13px;
+    }
 }
 
 
