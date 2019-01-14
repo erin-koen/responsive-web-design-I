@@ -76,6 +76,7 @@ body {
 @media (max-width:800px){
     body {
         width:100%;
+        padding: 15px;
     }
 }
 
@@ -170,7 +171,7 @@ button {
 }
 
 .top-content {
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 	display: flex;
 	justify-content: space-between; 
 }
@@ -181,16 +182,19 @@ button {
 }
 
 @media (max-width: 800px;){
+    .top-content h2 {
+        font-size: 50%;
+    }
     .top-content div {
         width: 48%;
     }
 }
 
-@media (max-width: 800px;){
-    .middle-image {
-        width: 100%;
-    }
+.middle {
+    max-width: 100%;
 }
+
+
 
 .bottom-content {
 	border-bottom: 1px solid black;
