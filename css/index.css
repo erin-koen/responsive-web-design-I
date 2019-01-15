@@ -97,6 +97,12 @@ body {
     }
 }
 
+@media (max-width: 500px){
+    .menu {
+        margin-top: 11px;
+    }
+}
+
 .menu nav {
 	display: flex;
 	justify-content: space-around;
@@ -107,7 +113,7 @@ body {
         max-width: 100%;
         display: flex;
         justify-content: space-around;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         padding: 30px 20px 0 0;
     }
 }
@@ -115,9 +121,15 @@ body {
 @media (max-width: 500px){
     .menu nav {
         flex-direction: column;
-        /* border: 1px solid red; */
+        max-width: 100%;
+        padding-right: 0;
+        padding-top: 17px;
+        margin-right:0;
+        margin-left: 0;
+        
         
     }
+
 }
 
 .menu nav a {
@@ -132,7 +144,10 @@ body {
     .menu nav a{
         text-align: center;
         border-top: 1px solid gray;
+        padding: 17.5px 0 18.5px 0;
         margin: 0;
+        font-size: 125%;
+        /* border: 1px solid red; */
         
     }
 }
@@ -153,6 +168,16 @@ body {
         /* border: 1px solid red; */
     }
 }
+
+@media (max-width: 500px){
+    .menu img {
+        padding-top: 0;;
+        margin-bottom: 2.5px;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+}
+
 .cta {
 	/* border: 1px solid red; */
 	display: flex;
