@@ -80,11 +80,30 @@ body {
     }
 }
 
+/* --------------- top of page menu with logo and links --------------- */
+
 .menu {
 	width: 876px;
 	display: flex;
 	justify-content: space-between;
 	margin-top: 30px;
+}
+
+.menu nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu nav a {
+padding: 10px 50px 10px 0;
+font-size: 100%;
+color: lightgray;
+text-decoration: none;
+/* border: 1px solid red; */
+}
+
+.menu img {
+	align-self: flex-end;
 }
 
 @media (max-width: 800px){
@@ -95,20 +114,6 @@ body {
         /* border: 1px solid red; */
         margin-top: 13px;
     }
-}
-
-@media (max-width: 500px){
-    .menu {
-        margin-top: 11px;
-    }
-}
-
-.menu nav {
-	display: flex;
-	justify-content: space-around;
-  }
-
-@media (max-width: 800px){
     .menu nav {
         max-width: 100%;
         display: flex;
@@ -116,31 +121,23 @@ body {
         /* border: 1px solid red; */
         padding: 30px 20px 0 0;
     }
+    .menu img {
+        align-self: center;
+    }
 }
 
 @media (max-width: 500px){
+    .menu {
+        margin-top: 11px;
+    }
     .menu nav {
         flex-direction: column;
         max-width: 100%;
         padding-right: 0;
         padding-top: 17px;
         margin-right:0;
-        margin-left: 0;
-        
-        
+        margin-left: 0;       
     }
-
-}
-
-.menu nav a {
-	padding: 10px 50px 10px 0;
-	font-size: 100%;
-	color: lightgray;
-	text-decoration: none;
-	/* border: 1px solid red; */
-}
-
-@media (max-width: 500px){
     .menu nav a{
         text-align: center;
         border-top: 1px solid gray;
@@ -148,28 +145,10 @@ body {
         margin: 0;
         font-size: 125%;
         /* border: 1px solid red; */
-        
     }
-}
-
-@media (max-width: 500px){
     .menu nav a:last-of-type {
         border-bottom: 1px solid gray;       
     }
-}
-
-.menu img {
-	align-self: flex-end;
-}
-
-@media (max-width: 800px){
-    .menu img {
-        align-self: center;
-        /* border: 1px solid red; */
-    }
-}
-
-@media (max-width: 500px){
     .menu img {
         padding-top: 0;;
         margin-bottom: 2.5px;
@@ -177,6 +156,9 @@ body {
         margin-top: 0;
     }
 }
+
+/* --------------- Call to Action ---------------*/
+
 
 .cta {
 	/* border: 1px solid red; */
@@ -190,13 +172,6 @@ body {
 	/* border: 1px solid red; */
 	text-align: center;
 }
-@media (max-width: 800px){
-    .cta div {
-        width: 100%;
-        padding-bottom: 60px;
-    }
-}
-
 
 .cta h1 {
 	font-size: 70px;
@@ -204,11 +179,17 @@ body {
 }
 
 @media (max-width: 800px){
+    .cta div {
+        width: 100%;
+        padding-bottom: 60px;
+    }
     .cta h1 {
         padding-bottom: 13px;
     }
+    .header-image {
+        display: none;
+    }
 }
-
 
 button {
 	border: 1px solid black;
@@ -222,11 +203,7 @@ button {
 	padding: 30px 0;
 }
 
-@media (max-width: 800px){
-    .header-image {
-        display: none;
-    }
-}
+
 
 .top-content {
 	border-top: 2px solid black;
