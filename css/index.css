@@ -132,7 +132,8 @@ text-decoration: none;
     }
     .menu nav {
         flex-direction: column;
-        max-width: 100%;
+        max-width: 500px;
+        width: 100%;
         padding-right: 0;
         padding-top: 17px;
         margin-right:0;
@@ -178,19 +179,6 @@ text-decoration: none;
 	padding: 0;
 }
 
-@media (max-width: 800px){
-    .cta div {
-        width: 100%;
-        padding-bottom: 60px;
-    }
-    .cta h1 {
-        padding-bottom: 13px;
-    }
-    .header-image {
-        display: none;
-    }
-}
-
 button {
 	border: 1px solid black;
 	border-radius: 0%;
@@ -203,12 +191,30 @@ button {
 	padding: 30px 0;
 }
 
+@media (max-width: 800px){
+    .cta div {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    .cta h1 {
+        padding-bottom: 13px;
+    }
 
+    .header-image {
+        display: none;
+    }
+}
+
+/* --------------- Top Content ---------------*/
 
 .top-content {
 	border-top: 2px solid black;
     display: flex;
 	justify-content: space-between; 
+}
+.top-content div {
+	width: 50%;
+    padding: 25px 10px 25px 0px;
 }
 
 @media (max-width: 800px){
@@ -216,19 +222,16 @@ button {
         /* border: 1px solid red; */
         justify-content: center;
     }
+    .top-content h2 {
+        /* border: 1px solid red; */
+        font-size: 100%;
+    }
 }
 
 @media (max-width: 500px){
     .top-content {
         flex-direction: column;
     }
-}
-
-.top-content div {
-	width: 50%;
-	padding: 25px 10px 25px 0px;
-}
-@media (max-width: 500px){
     .top-content div {
         width: 100%;
         padding: 10px 0 0 0;
@@ -236,16 +239,14 @@ button {
 }
 
 
+/* --------------- Middle Image ---------------*/
+
+
 .middle {
     max-width: 100%;
 }
 
-@media (max-width: 800px){
-    .top-content h2 {
-        /* border: 1px solid red; */
-        font-size: 100%;
-    }
-}
+/* --------------- Bottom Content ---------------*/
 
 .bottom-content {
 	border-bottom: 1px solid black;
@@ -253,22 +254,9 @@ button {
 	justify-content: space-between;
 }
 
-@media (max-width: 500px){
-    .bottom-content {
-        flex-direction: column;
-    }
-}
-
 .bottom-content div {
 	width: 33%;
 	padding: 25px 10px 25px 0px;
-}
-
-@media (max-width: 500px){
-    .bottom-content div {
-        width: 100%;
-        padding: 10px 0 0 0;
-    }
 }
 
 @media (max-width: 800px){
@@ -278,20 +266,27 @@ button {
     }
 }
 
-.contact .email-address {
-	color: black;
-	text-decoration: none;
-}
-
-.contact h2 {
-	padding: 40px 0 0 0; 
-	margin: 0;
+@media (max-width: 500px){
+    .bottom-content {
+        flex-direction: column;
+    }
+    .bottom-content div {
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
 }
 
 @media (max-width: 800px){
     .contact h2 {
         font-size: 100%;
     }
+}
+
+/* --------------- Contact Section ---------------*/
+
+.contact .email-address {
+	color: black;
+	text-decoration: none;
 }
 
 .contact .street-address {
@@ -315,6 +310,8 @@ button {
     }
 }
 
+/* --------------- Footer ---------------*/
+
 .index-footer {
 	text-align: center;
 	font-size: 75%;
@@ -322,91 +319,3 @@ button {
 }
 
 
-
-/* services page css below */
-
-.header-headline {
-	font-size: 150%;
-}
-.services-header-img {
-	padding: 30px 0;
-}
-
-.services-content {
-	/* border: 1px solid red; */
-	border-top: 1px solid black;
-	border-bottom: 3px solid black;
-	display: flex;
-	flex-flow: row wrap;
-	padding:30px 0;
-	margin: 30px 0;
-	justify-content: space-between;
-
-}
-
-.box {
-	border: 1px solid black;
-	background-color:#F4F3F4;
-	width: 418.5px;
-	padding: 20px;
-	margin-bottom: 30px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	
-}
-
-.box h2 {
-	margin-bottom: 20px;
-	/* border: 1px solid red; */
-}
-
-.box p {
-	/* border: 1px solid red; */
-	margin-bottom: 20px;
-}
-
-.box button {
-	width: 150px;
-	padding: 10px 15px;
-	border-radius: 3px;
-	margin: 0;
-
-}
-
-.services-footer {
-	padding: 0 0 60px 0;
-	text-align: left;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
-	/* border: 1px solid red; */
-	margin-top: 0;
-	
-}
-.services-footer .footer-facts-copy {
-	width: 418.5px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-}
-
-.services-footer p {
-	padding-bottom: 20px;
-}
-
-.services-footer ul {
-	list-style-type: square;
-	list-style-position: inside;
-}
-
-.services-footer li {
-	padding-bottom: 15px;
-}
-
-.copyright {
-	text-align: center;
-	font-size: 75%;
-}
