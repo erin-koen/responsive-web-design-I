@@ -239,3 +239,67 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+.container .cta div {
+  width: 48%;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .container .cta div {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+}
+.container .cta h1 {
+  font-size: 70px;
+  padding: 0;
+}
+@media (max-width: 800px) {
+  .container .cta h1 {
+    padding-bottom: 13px;
+  }
+}
+.container .cta button {
+  border: 1px solid black;
+  border-radius: 0%;
+  padding: 5px 25px;
+  font-size: 112.5%;
+  font-weight: bold;
+}
+.container .cta .header-image {
+  padding: 30px 0;
+}
+@media (max-width: 800px) {
+  .container .cta .header-image {
+    display: none;
+  }
+}
+.container .top-content {
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .container .top-content {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .container .top-content {
+    flex-direction: column;
+  }
+}
+.container .top-content div {
+  width: 50%;
+  padding: 25px 10px 25px 0;
+}
+@media (max-width: 500px) {
+  .container .top-content div {
+    width: 100px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .container .top-content h2 {
+    font-size: 100%;
+  }
+}
