@@ -294,12 +294,59 @@ h5 {
 }
 @media (max-width: 500px) {
   .container .top-content div {
-    width: 100px;
+    width: 100%;
     padding-top: 10px;
   }
 }
 @media (max-width: 800px) {
   .container .top-content h2 {
+    font-size: 100%;
+  }
+}
+.container .middle {
+  max-width: 100%;
+}
+.container .bottom-content {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .bottom-content {
+    flex-direction: column;
+  }
+}
+.container .bottom-content .div {
+  width: 33%;
+  padding: 25px 10px 25px 0;
+}
+@media (max-width: 500px) {
+  .container .bottom-content .div {
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+}
+@media (max-width: 800px) {
+  .container .bottom-content h2 {
+    font-size: 100%;
+  }
+}
+.container .contact p {
+  padding-top: 20px;
+}
+@media (max-width: 500px) {
+  .container .contact p {
+    padding-top: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.container .contact .email-address {
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .container .contact h2 {
     font-size: 100%;
   }
 }
