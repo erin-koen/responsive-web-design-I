@@ -20,4 +20,8 @@ It's time to expand our CSS skills into multiple devices.  You will be creating 
 * [ ] Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.  I recommend making a copy of all your contents in a new folder named "mobile-first" to keep it separate
 
 
+making a small change to push the 'desktop-first' branch
 
+
+
+starting over from scratch
